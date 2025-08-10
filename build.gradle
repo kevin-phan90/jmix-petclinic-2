@@ -14,7 +14,7 @@ jmix {
 
 
 group = 'io.jmix'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.2-SNAPSHOT'
 
 repositories {
     mavenCentral()
@@ -22,6 +22,7 @@ repositories {
         url = 'https://global.repo.jmix.io/repository/public'
     }
 }
+
 
 vaadin {
     optimizeBundle = false
