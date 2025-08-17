@@ -41,7 +41,7 @@ pipeline {
       steps {
         container("gcloud-builder") {
           script {
-            sh "kubectl set image deployment/${env.appName} ${env.appName}=${env.gcrImage} -n portfolio"
+            sh "kubectl set image deployment/${env.appName} ${env.appName}=${env.gcrImage} -n development"
           }
         }
       }
