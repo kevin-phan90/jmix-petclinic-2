@@ -45,6 +45,12 @@
                     <action id="entityClear" type="entity_clear"/>
                 </actions>
             </entityPicker>
+            <hbox>
+                <fileStorageUploadField id="avatarField" dataContainer="petDc" property="avatar"/>
+                <image id="image" property="avatar" dataContainer="petDc" height="10em" width="10em"
+                       classNames="user-picture"/>
+            </hbox>
+
         </formLayout>
         <hbox id="detailActions">
             <button id="saveAndCloseBtn" action="saveAction"/>

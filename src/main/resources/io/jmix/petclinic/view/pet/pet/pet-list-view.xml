@@ -93,6 +93,7 @@
                 <action id="excelExport" type="grdexp_excelExport"/>
             </actions>
             <columns>
+                <column key="picture" sortable="false" flexGrow="0" resizable="false"/>
                 <column property="name"/>
                 <column property="identificationNumber"/>
                 <column property="birthdate"/>

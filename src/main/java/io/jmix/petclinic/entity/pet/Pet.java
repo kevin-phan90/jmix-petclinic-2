@@ -1,8 +1,8 @@
 package io.jmix.petclinic.entity.pet;
 
+import io.jmix.core.FileRef;
 import io.jmix.core.metamodel.annotation.JmixEntity;
 import io.jmix.petclinic.entity.NamedEntity;
-import io.jmix.petclinic.entity.Person;
 import io.jmix.petclinic.entity.owner.Owner;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -28,6 +28,17 @@ public class Pet extends NamedEntity {
     @JoinColumn(name = "OWNER_ID")
     @ManyToOne(fetch = FetchType.LAZY)
     private Owner owner;
+
+    @Column(name = "AVATAR", length = 1024)
+    private FileRef avatar;
+
+    public FileRef getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(FileRef avatar) {
+        this.avatar = avatar;
+    }
 
     public LocalDate getBirthdate() {
         return birthdate;
