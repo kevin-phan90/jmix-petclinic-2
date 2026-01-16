@@ -46,7 +46,7 @@
                 </actions>
             </entityPicker>
             <hbox>
-                <fileStorageUploadField id="avatarField" dataContainer="petDc" property="avatar"/>
+                <fileStorageUploadField id="avatarField" dataContainer="petDc" property="avatar" fileStoragePutMode="MANUAL"/>
                 <image id="image" property="avatar" dataContainer="petDc" height="10em" width="10em"
                        classNames="user-picture"/>
             </hbox>
