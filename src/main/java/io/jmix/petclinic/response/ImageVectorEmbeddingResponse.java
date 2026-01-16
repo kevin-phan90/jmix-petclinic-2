@@ -4,13 +4,15 @@ import java.util.List;
 
 public class ImageVectorEmbeddingResponse {
 
-    private List<Float> embedding;
-
-    public List<Float> getEmbedding() {
-        return embedding;
+    public List<Float> getImage_embedding() {
+        return image_embedding;
     }
 
-    public void setEmbedding(List<Float> embedding) {
-        this.embedding = embedding;
+    public void setImage_embedding(List<Float> image_embedding) {
+        this.image_embedding = image_embedding;
     }
+
+    private List<Float> image_embedding;
+
+
 }

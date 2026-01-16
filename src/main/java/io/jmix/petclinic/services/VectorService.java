@@ -51,6 +51,6 @@ public class VectorService {
                 .body(BodyInserters.fromMultipartData(form))
                 .retrieve().bodyToMono(ImageVectorEmbeddingResponse.class).block();
 
-        return imageVectorEmbeddingResponse.getEmbedding();
+        return imageVectorEmbeddingResponse.getImage_embedding();
     }
 }
